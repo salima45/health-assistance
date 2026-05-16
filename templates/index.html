@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Health Assistant</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background: linear-gradient(to right,#4facfe,#00f2fe);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            width:350px;
+            box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:20px;
+            color:#333;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border-radius:8px;
+            border:1px solid #ccc;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#4facfe;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#00c6fb;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Health Assistant</h1>
+
+<form action="/predict" method="POST">
+
+<label>Fever</label>
+<select name="fever">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+</select>
+
+<label>Cough</label>
+<select name="cough">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+</select>
+
+<label>Headache</label>
+<select name="headache">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+</select>
+
+<label>Fatigue</label>
+<select name="fatigue">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+</select>
+
+<button type="submit">
+Predict Disease
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

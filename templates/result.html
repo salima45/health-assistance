@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background: linear-gradient(to right,#4facfe,#00f2fe);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            width:400px;
+            text-align:center;
+            box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:#333;
+            margin-bottom:20px;
+        }
+
+        .result{
+            background:#f0f8ff;
+            padding:20px;
+            border-radius:10px;
+            margin-top:20px;
+        }
+
+        h2{
+            color:#555;
+        }
+
+        h3{
+            color:#007bff;
+            font-size:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 20px;
+            background:#4facfe;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            font-size:16px;
+        }
+
+        .btn:hover{
+            background:#00c6fb;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Health Assistant</h1>
+
+<div class="result">
+
+<h2>Possible Disease</h2>
+
+<h3>{{ disease }}</h3>
+
+</div>
+
+<a href="/" class="btn">
+Check Again
+</a>
+
+</div>
+
+</body>
+</html>
